@@ -20,7 +20,7 @@ function Burger() {
   const { theme, setTheme } = useTheme()
 
   return (
-    <Drawer direction="right" >
+    <Drawer>
       <DrawerTrigger asChild className="burger" style={{ display: "none"}}>
         <Button variant={'ghost'}>
           <MenuIcon />
