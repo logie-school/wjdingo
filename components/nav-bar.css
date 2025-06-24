@@ -1,0 +1,50 @@
+.nav-bar {
+  width: 90% !important;
+}
+
+@media (max-width: 900px) {
+    .nav-bar {
+      width: 90% !important;
+    }
+  
+    .burger {
+      display: block !important;
+      visibility: visible !important;
+    }
+  
+    .nav-buttons {
+      display: none !important;
+    }
+
+    .hero-content {
+        width: 90% !important;
+    }
+}
+
+/* .nav {
+    opacity: 0.5;
+    top: -40px;
+    animation: load 0.5s cubic-bezier(.17,.67,.2,1) forwards;
+}
+
+@keyframes load {
+    0% {
+        top: -40px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+} */
+
+.banner-container {
+  overflow: hidden;
+  transition: max-height 300ms ease, opacity 300ms ease;
+  max-height: 48px;
+  opacity: 1;
+}
+.banner-container.collapsing {
+  max-height: 0;
+  opacity: 0;
+}

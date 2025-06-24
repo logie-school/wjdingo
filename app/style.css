@@ -1,0 +1,66 @@
+.hero {
+    background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 1)),
+    url('../public/splash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* change style depending on screen size */
+@media (max-width: 750px) {
+    .hero-content {
+        width: 90% !important;
+        padding: 0;
+    }
+
+    .offer {
+        padding: 0px !important;
+    }
+
+
+    .offer-content {
+        width: 90% !important;
+        padding: 30px;
+    }
+    
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+}
+
+/* Dark theme hero */
+.dark .hero {
+  background: linear-gradient(rgba(10,10,10,0.9), rgba(10,10,10,1)),
+              url('../public/splash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Light theme hero */
+.light .hero {
+  background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,1)),
+              url('../public/splash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* .pricing-tier {
+    width: 100%;
+    display: flex;
+} */
+
+
+.blinker {
+    animation: blinker 1s ease-in-out infinite;
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 0.5;
+        scale: 1;
+    }
+    100% {
+        opacity: 0;
+        scale: 2;
+    }
+}

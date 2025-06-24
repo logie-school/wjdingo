@@ -1,0 +1,16 @@
+body {
+  overflow-x: hidden;
+}
+
+/* change style depending on screen size */
+@media (max-width: 750px) {
+  .input-group {
+    flex-direction: column !important;
+  }
+
+  .input-card {
+    width: 90% !important;
+    max-width: 90% !important;
+    /* margin-top: 80px; */
+  }
+}
