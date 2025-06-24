@@ -72,18 +72,18 @@ export function Footer() {
     {
       title: "Socials",
       items: [
-        <FooterItem key="instagram" name="Instagram" href="#" />,
-        <FooterItem key="facebook" name="Facebook" href="#" />,
-        <FooterItem key="tiktok" name="TikTok" href="#" />,
-        <FooterItem key="youtube" name="YouTube" href="#" />,
+        <FooterItem key="instagram" name="Instagram" href="https://www.instagram.com/dingo_lawn_care?igsh=enV2MDZyYXM1Yzhl&utm_source=qr" />,
+        <FooterItem key="tiktok" name="TikTok" href="https://www.tiktok.com/@dingo.lawn.care?_t=ZS-8xTFW7Vaf46&_r=1" />,
+        <FooterItem key="youtube" name="YouTube" href="https://youtube.com/@dingolawncare?si=1QEagRK5P3OdqtWh" />,
+        <FooterItem key="facebook" name="Facebook" href="https://www.facebook.com/share/1ZANzPUXJV/?mibextid=wwXIfr" />,
 
       ],
     },
     {
       title: "Contact",
       items: [
-        <FooterItem key="email" name="contact@wjdingo.com" href="mailto:contact@wjdingo.com" />,
-        <FooterItem key="phone" name="+61 123 456 789" href="tel:+61123456789" />,
+        <FooterItem key="email" name="dingolawncareaus@gmail.com" href="mailto:dingolawncareaus@gmail.com" />,
+        <FooterItem key="phone" name="+61477990630" href="tel:+61477990630" />,
       ],
     },
   ];

@@ -108,25 +108,25 @@ export default function About() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="flex items-center justify-center gap-4 max-[1000px]:flex-col">
-                    <Link href="#" target="_blank" rel="noopener noreferrer" className=" max-[1000px]:w-[100%] cursor-pointer">
+                    <Link href="https://www.facebook.com/share/1ZANzPUXJV/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className=" max-[1000px]:w-[100%] cursor-pointer">
                       <Button style={{background: 'linear-gradient(45deg, #3f72fd, #22cbff)'}} className="text-white hover:transform-[translateY(-2px)] transition-[0.3s] max-[1000px]:w-[100%] cursor-pointer">
                         <SiFacebook />
                         Facebook
                       </Button>
                     </Link>
-                    <Link href="#" target="_blank" rel="noopener noreferrer" className=" max-[1000px]:w-[100%] cursor-pointer">
+                    <Link href="https://youtube.com/@dingolawncare?si=1QEagRK5P3OdqtWh" target="_blank" rel="noopener noreferrer" className=" max-[1000px]:w-[100%] cursor-pointer">
                       <Button style={{background: 'linear-gradient(45deg, #dd2630, #b94d4d)'}} className="text-white hover:transform-[translateY(-2px)] transition-[0.3s] max-[1000px]:w-[100%] cursor-pointer">
                         <SiYoutube />
                         YouTube
                       </Button>
                     </Link>
-                    <Link href="#" target="_blank" rel="noopener noreferrer" className=" max-[1000px]:w-[100%] cursor-pointer">
+                    <Link href="https://www.instagram.com/dingo_lawn_care?igsh=enV2MDZyYXM1Yzhl&utm_source=qr" target="_blank" rel="noopener noreferrer" className=" max-[1000px]:w-[100%] cursor-pointer">
                       <Button style={{background: 'linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7)'}} className="text-white hover:transform-[translateY(-2px)] transition-[0.3s] max-[1000px]:w-[100%] cursor-pointer">
                         <SiInstagram />
                         Instagram
                       </Button>
                     </Link>
-                    <Link href="#" target="_blank" rel="noopener noreferrer" className=" max-[1000px]:w-[100%] cursor-pointer">
+                    <Link href="https://www.tiktok.com/@dingo.lawn.care?_t=ZS-8xTFW7Vaf46&_r=1" target="_blank" rel="noopener noreferrer" className=" max-[1000px]:w-[100%] cursor-pointer">
                       <Button style={{background: 'linear-gradient(90deg, rgba(1,242,233,1) 0%, rgba(9,159,244,1) 16%, rgba(252,3,80,1) 100%)'}} className="text-white hover:transform-[translateY(-2px)] transition-[0.3s] max-[1000px]:w-[100%] cursor-pointer">
                         <SiTiktok />
                         TikTok
