@@ -27,18 +27,6 @@ import { FooterItem } from "@/components/footer-item";
 import StarBorder from "@/components/react-bits/StarBorder/StarBorder";
 
 export default function Home() {
-  // trigger toast from URL
-  const searchParams = useSearchParams()
-  const msg = searchParams.get("toast")
-  const type = searchParams.get("toastType") as keyof typeof toast
-
-  useEffect(() => {
-    if (msg && type && typeof toast[type] === "function") {
-      // @ts-ignore
-      toast[type](msg)
-    }
-  }, [msg, type])
-
     const badgeRef = useRef<HTMLDivElement>(null);
     const measureRef = useRef<HTMLDivElement>(null);
     const isInView = useInView(badgeRef, { once: true, margin: "-50px" });
