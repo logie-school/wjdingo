@@ -14,10 +14,10 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer"
 import Link from "next/link"
-import { useTheme } from "@/components/theme-context"
+// import { useTheme } from "@/components/theme-context"
 
 function Burger() {
-  const { theme, setTheme } = useTheme()
+  // const { theme, setTheme } = useTheme()
 
   return (
     <Drawer>

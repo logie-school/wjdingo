@@ -28,11 +28,11 @@ import { ArrowRight, SunIcon, MoonIcon, X } from "lucide-react"
 import { Burger } from "@/components/burger"
 import './nav-bar.css'
 import { Badge } from "@/components/ui/badge"
-import { useTheme } from "@/components/theme-context"
+// import { useTheme } from "@/components/theme-context"
 
 function Navbar() {
   const pathname = usePathname()
-  const { theme, setTheme } = useTheme()
+  // const { theme, setTheme } = useTheme()
 
   // banner control
   const [showBanner, setShowBanner] = React.useState(true)
