@@ -149,14 +149,14 @@ function Navbar() {
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                {/* <NavigationMenuItem>
                   <Button
                     variant="ghost"
                     onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                   >
                     {theme === "dark" ? <MoonIcon /> : <SunIcon />}
                   </Button>
-                </NavigationMenuItem>
+                </NavigationMenuItem> */}
               </NavigationMenuList>
             </NavigationMenu>
           </div>

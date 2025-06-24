@@ -9,11 +9,20 @@ interface ThemeContext {
 
 const Context = createContext<ThemeContext | null>(null);
 
-export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [theme, setTheme] = useState<Theme>("light");
+export const ThemeProvider: React.FC<{
+  children: React.ReactNode;
+  forceLight?: boolean;
+}> = ({ children, forceLight = false }) => {
+  // keep internal state but derive actual theme
+  const [themeState, setThemeState] = useState<Theme>("light");
+  const theme: Theme = forceLight ? "light" : themeState;
+  const setTheme = forceLight
+    ? (_: Theme) => {}
+    : (t: Theme) => setThemeState(t);
 
   // on mount, read localStorage or OS preference
   useEffect(() => {
+    if (forceLight) return;
     const saved = localStorage.getItem("theme") as Theme | null;
     if (saved) {
       setTheme(saved);
@@ -30,7 +39,9 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   useEffect(() => {
     document.documentElement.classList.toggle("dark", theme === "dark");
     document.documentElement.classList.toggle("light", theme === "light");
-    localStorage.setItem("theme", theme);
+    if (!forceLight) {
+      localStorage.setItem("theme", theme);
+    }
   }, [theme]);
 
   return <Context.Provider value={{ theme, setTheme }}>{children}</Context.Provider>;

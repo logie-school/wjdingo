@@ -20,13 +20,13 @@ function Burger() {
   const { theme, setTheme } = useTheme()
 
   return (
-    <Drawer>
+    <Drawer direction="right" >
       <DrawerTrigger asChild className="burger" style={{ display: "none"}}>
-        <Button variant="ghost">
+        <Button variant={'ghost'}>
           <MenuIcon />
         </Button>
       </DrawerTrigger>
-      <DrawerContent>
+      <DrawerContent className="z-[9999]">
         <div className="mx-auto w-full">
           <DrawerHeader hidden>
             <DrawerTitle>Move Goal</DrawerTitle>
@@ -73,14 +73,14 @@ function Burger() {
                 </Link>
               </Button>
             </DrawerClose>
-            <Button
+            {/* <Button
               variant="ghost"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className="flex flex-row gap-2 items-center justify-start burger-item font-[500]"
             >
               {theme === "dark" ? <Moon className="opacity-50" /> : <Sun className="opacity-50" />}
               Change Theme
-            </Button>
+            </Button> */}
           </div>
         </div>
       </DrawerContent>
