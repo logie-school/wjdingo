@@ -147,7 +147,7 @@ function BookContent() {
       <div className="w-full h-fit flex justify-center items-center pb-12 pt-12">
         <Card className="min-[1100px]:w-[40%] max-[1100px]:w-[90%] input-card bg-background/90 backdrop-blur-sm border-0 p-0 shadow-none">
           <CardHeader className="p-0">
-            <CardTitle>Get a Quote</CardTitle>
+            <CardTitle>Get a Quote2</CardTitle>
             <CardDescription>Reach out to get a quote.</CardDescription>
           </CardHeader>
           <CardContent className="p-0">
