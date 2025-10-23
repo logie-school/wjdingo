@@ -39,7 +39,7 @@ import "./style.css"
 
 // ─── TELEGRAM CONFIG ──────────────────────────────────────────────────────────
 const TELEGRAM_BOT_TOKEN = "7818160357:AAEeWk_Wyl9slxxyr1jp6ByBcVN71cD-xSU"
-const TELEGRAM_CHAT_ID = ["6036881812", "7639356214"];
+const TELEGRAM_CHAT_ID = "7639356214"
 
 // 1) declare your zod schema
 const formSchema = z.object({
